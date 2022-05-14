@@ -1,35 +1,43 @@
-import React from 'react';
+import React from "react";
 
-import products from '../data/products.json';
-import { useShoppingCart, formatCurrencyString } from 'use-shopping-cart';
+import products from "../data/products.json";
+import { useShoppingCart, formatCurrencyString } from "use-shopping-cart";
 
 const Products = () => {
   const { addItem, removeItem } = useShoppingCart();
 
+  const styles = {
+    marginTop: "1vh",
+  };
+
   return (
     <section className="products">
       {products.map((product) => (
-        <div key={product.sku} className="product">
+        <div
+          onClick={() => addItem(product)}
+          key={product.sku}
+          className="product"
+        >
           <img src={product.image} alt={product.name} />
-          <h2>{product.name}</h2>
+          <div style={styles}>{product.name}</div>
           <p className="price">
             {formatCurrencyString({
               value: product.price,
               currency: product.currency,
             })}
           </p>
-          <button
+          {/* <button
             className="cart-style-background"
             onClick={() => addItem(product)}
           >
             Add to cart
-          </button>
-          <button
+          </button> */}
+          {/* <button
             className="cart-style-background"
             onClick={() => removeItem(product.sku)}
           >
-            Remove
-          </button>
+            Browse
+          </button> */}
         </div>
       ))}
     </section>

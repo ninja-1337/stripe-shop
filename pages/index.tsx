@@ -1,15 +1,15 @@
-import { NextPage } from 'next';
-import Link from 'next/link';
-import Layout from '../components/Layout';
+import { NextPage } from "next";
+import Link from "next/link";
+import Layout from "../components/Layout";
 
 const IndexPage: NextPage = () => {
   return (
-    <Layout title="Home | Next.js + TypeScript Example">
+    <Layout title="EasySec Shop">
       <ul className="card-list">
         <li>
           <Link href="/donate-with-checkout">
             <a className="card checkout-style-background">
-              <h2 className="bottom">Donate with Checkout</h2>
+              <h2 className="bottom">Custom Payment with Checkout</h2>
               <img src="/checkout-one-time-payments.svg" />
             </a>
           </Link>
@@ -17,7 +17,7 @@ const IndexPage: NextPage = () => {
         <li>
           <Link href="/donate-with-elements">
             <a className="card elements-style-background">
-              <h2 className="bottom">Donate with Elements</h2>
+              <h2 className="bottom">Pay with Elements</h2>
               <img src="/elements-card-payment.svg" />
             </a>
           </Link>
@@ -25,7 +25,15 @@ const IndexPage: NextPage = () => {
         <li>
           <Link href="/use-shopping-cart">
             <a className="card cart-style-background">
-              <h2 className="bottom">Use Shopping Cart</h2>
+              <h2 className="bottom">Browse Products</h2>
+              <img src="/use-shopping-cart.png" />
+            </a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/CartView">
+            <a className="card cart-style-background">
+              <h2 className="bottom">View Shoping Cart</h2>
               <img src="/use-shopping-cart.png" />
             </a>
           </Link>

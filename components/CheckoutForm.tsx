@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
-import CustomDonationInput from '../components/CustomDonationInput';
-import StripeTestCards from '../components/StripeTestCards';
+import CustomDonationInput from "../components/CustomDonationInput";
+import StripeTestCards from "../components/StripeTestCards";
 
-import getStripe from '../utils/get-stripejs';
-import { fetchPostJSON } from '../utils/api-helpers';
-import { formatAmountForDisplay } from '../utils/stripe-helpers';
-import * as config from '../config';
+import getStripe from "../utils/get-stripejs";
+import { fetchPostJSON } from "../utils/api-helpers";
+import { formatAmountForDisplay } from "../utils/stripe-helpers";
+import * as config from "../config";
 
 const CheckoutForm = () => {
   const [loading, setLoading] = useState(false);
@@ -24,7 +24,7 @@ const CheckoutForm = () => {
     e.preventDefault();
     setLoading(true);
     // Create a Checkout Session.
-    const response = await fetchPostJSON('/api/checkout_sessions', {
+    const response = await fetchPostJSON("/api/checkout_sessions", {
       amount: input.customDonation,
     });
 
@@ -52,7 +52,7 @@ const CheckoutForm = () => {
     <form onSubmit={handleSubmit}>
       <CustomDonationInput
         className="checkout-style"
-        name={'customDonation'}
+        name={"customDonation"}
         value={input.customDonation}
         min={config.MIN_AMOUNT}
         max={config.MAX_AMOUNT}
@@ -66,7 +66,7 @@ const CheckoutForm = () => {
         type="submit"
         disabled={loading}
       >
-        Donate {formatAmountForDisplay(input.customDonation, config.CURRENCY)}
+        Pay {formatAmountForDisplay(input.customDonation, config.CURRENCY)}
       </button>
     </form>
   );

@@ -1,18 +1,22 @@
-import { NextPage } from 'next'
-import Layout from '../components/Layout'
+import { NextPage } from "next";
+import Layout from "../components/Layout";
 
-import CheckoutForm from '../components/CheckoutForm'
-
+import CheckoutForm from "../components/CheckoutForm";
+const styles = {
+  marginTop: "10vh",
+};
 const DonatePage: NextPage = () => {
   return (
-    <Layout title="Donate with Checkout | Next.js + TypeScript Example">
-      <div className="page-container">
-        <h1>Donate with Checkout</h1>
-        <p>Donate to our project 💖</p>
-        <CheckoutForm />
-      </div>
-    </Layout>
-  )
-}
+    <div style={styles}>
+      <Layout title="Donate with Checkout | Next.js + TypeScript Example">
+        <div className="page-container">
+          <h1>Custom Payment Checkout💰</h1>
 
-export default DonatePage
+          <CheckoutForm />
+        </div>
+      </Layout>
+    </div>
+  );
+};
+
+export default DonatePage;

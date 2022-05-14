@@ -1,5 +1,5 @@
-import React from 'react';
-import { formatAmountForDisplay } from '../utils/stripe-helpers';
+import React from "react";
+import { formatAmountForDisplay } from "../utils/stripe-helpers";
 
 type Props = {
   name: string;
@@ -10,6 +10,9 @@ type Props = {
   step: number;
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   className?: string;
+};
+const styles = {
+  marginTop: "7vh",
 };
 
 const CustomDonationInput = ({
@@ -22,29 +25,31 @@ const CustomDonationInput = ({
   onChange,
   className,
 }: Props) => (
-  <label>
-    Custom donation amount ({formatAmountForDisplay(min, currency)}-
-    {formatAmountForDisplay(max, currency)}):
-    <input
-      className={className}
-      type="number"
-      name={name}
-      value={value}
-      min={min}
-      max={max}
-      step={step}
-      onChange={onChange}
-    ></input>
-    <input
-      type="range"
-      name={name}
-      value={value}
-      min={min}
-      max={max}
-      step={step}
-      onChange={onChange}
-    ></input>
-  </label>
+  <div style={styles}>
+    <label>
+      Custom payment amount ({formatAmountForDisplay(min, currency)}-
+      {formatAmountForDisplay(max, currency)}):
+      <input
+        className={className}
+        type="number"
+        name={name}
+        value={value}
+        min={min}
+        max={max}
+        step={step}
+        onChange={onChange}
+      ></input>
+      <input
+        type="range"
+        name={name}
+        value={value}
+        min={min}
+        max={max}
+        step={step}
+        onChange={onChange}
+      ></input>
+    </label>
+  </div>
 );
 
 export default CustomDonationInput;

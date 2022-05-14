@@ -1,19 +1,83 @@
 [
   {
-    "name": "Bananas",
-    "description": "Yummy yellow fruit",
+    "name": "ERC20 Token",
+    "description": "Yummy grey ETH fruit",
     "sku": "sku_GBJ2Ep8246qeeT",
-    "price": 400,
-    "image": "https://images.unsplash.com/photo-1574226516831-e1dff420e562?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=225&q=80",
-    "attribution": "Photo by Priscilla Du Preez on Unsplash",
-    "currency": "USD"
+    "price": 2000,
+    "image": "https://img.capital.com/imgs/articles/1200x627x1/shutterstock_1958528764.jpg",
+    "attribution": "",
+    "currency": "EUR"
   },
   {
-    "name": "Tangerines",
+    "name": "Fork SushiSwap Platform",
+    "description": "Decentralised Finance Platform",
+    "sku": "sku_GBJ2Ep8246qeqT",
+    "price": 200000,
+    "image": "https://files.ambcrypto.com/wp-content/uploads/2021/11/30202142/sushiswap-1000x600.jpg",
+    "attribution": "",
+    "currency": "EUR"
+  },
+  {
+    "name": "Product Placeholder",
+    "description": "Placeholder",
+    "sku": "sku_GBJ2sEp8246qeqT",
+    "price": 200000,
+    "image": "https://files.ambcrypto.com/wp-content/uploads/2021/11/30202142/sushiswap-1000x600.jpg",
+    "attribution": "",
+    "currency": "EUR"
+  },
+  {
+    "name": "Product Placeholder",
+    "description": "Placeholder",
+    "sku": "sku_GBJ2sEp8246qeqT",
+    "price": 200000,
+    "image": "https://files.ambcrypto.com/wp-content/uploads/2021/11/30202142/sushiswap-1000x600.jpg",
+    "attribution": "",
+    "currency": "EUR"
+  },
+  {
+    "name": "Product Placeholder",
+    "description": "Placeholder",
+    "sku": "sku_GBJ2sEp8246qeqT",
+    "price": 200000,
+    "image": "https://files.ambcrypto.com/wp-content/uploads/2021/11/30202142/sushiswap-1000x600.jpg",
+    "attribution": "",
+    "currency": "EUR"
+  },
+  {
+    "name": "Product Placeholder",
+    "description": "Placeholder",
+    "sku": "sku_GBJ2sEp8246qeqT",
+    "price": 200000,
+    "image": "https://files.ambcrypto.com/wp-content/uploads/2021/11/30202142/sushiswap-1000x600.jpg",
+    "attribution": "",
+    "currency": "EUR"
+  },
+  {
+    "name": "Product Placeholder",
+    "description": "Placeholder",
+    "sku": "sku_GBJ2sEp8246qeqT",
+    "price": 200000,
+    "image": "https://files.ambcrypto.com/wp-content/uploads/2021/11/30202142/sushiswap-1000x600.jpg",
+    "attribution": "",
+    "currency": "EUR"
+  },
+
+  {
+    "name": "Custom Podcasting Platform",
+    "description": "Decentralised Finance Platform",
+    "sku": "sku_GBJ2Ep8359qeqT",
+    "price": 20000,
+    "image": "https://media.istockphoto.com/photos/top-view-photo-of-podcast-concept-lightbox-with-letters-podcast-on-it-picture-id1193759813?k=20&m=1193759813&s=612x612&w=0&h=mej3U9sXdCWrXQHz6djMSvQF4k5saRNJIQZGKSRWSlE=",
+    "attribution": "",
+    "currency": "EUR"
+  },
+  {
+    "name": "Online E-Shop",
     "sku": "sku_GBJ2WWfMaGNC2Z",
-    "price": 100,
-    "image": "https://images.unsplash.com/photo-1482012792084-a0c3725f289f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=225&q=80",
-    "attribution": "Photo by Jonathan Pielmayer on Unsplash",
-    "currency": "USD"
+    "price": 20000,
+    "image": "https://lightform.gr/wp-content/uploads/2020/04/kataskeyh-eshop-landingp-age-1.jpg",
+    "attribution": "",
+    "currency": "EUR"
   }
 ]
