@@ -1,46 +1,38 @@
 import { NextPage } from "next";
-import Link from "next/link";
 import Layout from "../components/Layout";
 
-const IndexPage: NextPage = () => {
+import Cart from "../components/Cart";
+import CartSummary from "../components/CartSummary";
+import Products from "../components/Products";
+import { useState } from "react";
+import React from "react";
+
+//style const
+const styles = {
+  height: "90vh",
+  marginTop: "6vh",
+};
+const center = {
+  alignItems: "center",
+  justifyContent: "center",
+
+};
+
+const DonatePage: NextPage = () => {
   return (
-    <Layout title="EasySec Shop">
-      <ul className="card-list">
-        <li>
-          <Link href="/donate-with-checkout">
-            <a className="card checkout-style-background">
-              <h2 className="bottom">Custom Payment with Checkout</h2>
-              <img src="/checkout-one-time-payments.svg" />
-            </a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/donate-with-elements">
-            <a className="card elements-style-background">
-              <h2 className="bottom">Pay with Elements</h2>
-              <img src="/elements-card-payment.svg" />
-            </a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/use-shopping-cart">
-            <a className="card cart-style-background">
-              <h2 className="bottom">Browse Products</h2>
-              <img src="/use-shopping-cart.png" />
-            </a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/CartView">
-            <a className="card cart-style-background">
-              <h2 className="bottom">View Shoping Cart</h2>
-              <img src="/use-shopping-cart.png" />
-            </a>
-          </Link>
-        </li>
-      </ul>
-    </Layout>
+
+      <Layout title="Shopping Cart | Next.js + TypeScript Example">
+        <div style={center}>
+          <h1 >Products</h1>
+        </div>
+        <Cart>
+          <Products />
+
+        </Cart>
+
+      </Layout>
+
   );
 };
 
-export default IndexPage;
+export default DonatePage;

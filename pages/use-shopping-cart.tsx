@@ -18,7 +18,7 @@ const DonatePage: NextPage = () => {
     <div style={styles}>
       <Layout title="Shopping Cart | Next.js + TypeScript Example">
         <div className="page-container">
-          <h1 style={center}>Products</h1>
+          <h1>Products</h1>
           <Cart>
             <Products />
             {/* <CartSummary /> */}

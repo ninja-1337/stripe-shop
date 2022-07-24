@@ -6,39 +6,10 @@ import { useShoppingCart } from "use-shopping-cart";
 import { fetchPostJSON } from "../utils/api-helpers";
 import Link from "next/link";
 
-const CartSummary = () => {
-  const [loading, setLoading] = useState(false);
-  const [cartEmpty, setCartEmpty] = useState(true);
-  const {
-    formattedTotalPrice,
-    cartCount,
-    clearCart,
-    cartDetails,
-    redirectToCheckout,
-  } = useShoppingCart();
+const CartNav = () => {
 
-  useEffect(() => setCartEmpty(!cartCount), [cartCount]);
 
-  const handleCheckout: React.FormEventHandler<HTMLFormElement> = async (
-    event
-  ) => {
-    event.preventDefault();
-    setLoading(true);
-
-    const response = await fetchPostJSON(
-      "/api/checkout_sessions/cart",
-      cartDetails
-    );
-
-    if (response.statusCode === 500) {
-      console.error(response.message);
-      return;
-    }
-
-    redirectToCheckout({ sessionId: response.id });
-  };
-
-  return <Link href="/CartView">Cart🛒</Link>;
+  return <div className="header-cart"><Link href="/CartView">Cart🛒</Link></div>;
 };
 
-export default CartSummary;
+export default CartNav;

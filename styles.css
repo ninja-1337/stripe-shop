@@ -13,11 +13,11 @@
 }
 
 body {
-  height: 80vh;
+
   margin: 0;
   padding: 0;
   background: var(--body-color);
-  overflow-y: scroll;
+
 }
 
 * {
@@ -25,17 +25,18 @@ body {
   font-family: var(--body-font-family);
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+.popup-overlay {
+  background-color: rgba(0, 0, 0, 0.9);
+}
 
 #__next {
-  display: flex;
+
   justify-content: center;
 }
 
 .container {
-  height: 90vh;
+padding-top: 10vh;
 
-  padding: 25px 15px;
-  display: flex;
 }
 
 .page-container {
@@ -68,16 +69,184 @@ a {
   color: var(--checkout-color);
   text-decoration: none;
 }
-
-.header-content {
-  position: sticky;
-  top: 35px;
-  padding: 3rem;
+.popup-overlay {
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
+.button-27 {
+  appearance: none;
+  background-color: #000000;
+  background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height:25px;
+  min-width: 25px;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 25vw;
+  will-change: transform;
+}
+
+.button-27:disabled {
+  pointer-events: none;
+}
+
+.button-27:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button-27:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.button-26 {
+  appearance: none;
+  background-color: #000000;
+  background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  will-change: transform;
+}
+
+.button-26:disabled {
+  pointer-events: none;
+}
+
+.button-26:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button-26:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.header-content {
+
+width: 100vw;
+
+height: 8vh;
+
+position: fixed;
+
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+
+zIndex: 1;
+backgroundColor: white;
+display: flex;
+justifyContent: space-between;
+
+
+fontSize: 1rem;
+
+color: white;
+
+fontWeight: bold;
+
+textAlign: center;
+
+textTransform: uppercase;
+
+}
+
+#mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  opacity: 0.5;
+}
+
+
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgb(111,111,111);
+z-index: 9;
+}
 .logo img {
   height: 20px;
   margin-bottom: 52px;
+}
+.cartcenter {
+
+  justifyContent: center;
+  alignItems: center;
+  align-content: center;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  backgroundColor: "white";
+
+
+
+
+
+}
+.header-cart {
+
+  top: 0;
+
+  right: 0;
+  bottom: 0;
+
+  zIndex: 1;
+
+  height: 8vh;
+  position: fixed;
+  right: 3vw;
+
 }
 
 ul,
@@ -148,7 +317,8 @@ input[type="range"] {
 
 button {
   border-radius: var(--radius);
-  color: white;
+  background: rgb(87,141,201);
+  background: linear-gradient(0deg, rgba(87,141,201,1) 13%, rgba(168,255,246,1) 100%, rgba(45,227,253,0.938813025210084) 100%);
   font-size: large;
   border: 0;
   padding: 12px 16px;
@@ -158,7 +328,7 @@ button {
   transition: all 0.2s ease;
   display: block;
   width: 25vw;
-  height: 8vh;
+  height: 12vh;
 }
 button:disabled {
   opacity: 0.5;
@@ -198,18 +368,130 @@ button:disabled {
 
 /* Products */
 .products {
-  width: 80vw;
+  width: 100vw;
   display: grid;
   gap: 0.7rem;
   grid-template-columns: repeat(3, 1fr);
   margin-top: 2rem;
   cursor: pointer;
+  align-content: center;
+    justify-content: center;
+
 }
 
+
+/* Modals */
+.modal {
+  width: 80vw;
+  height: 83vh;
+  position: absolute;
+
+  background: linear-gradient(45deg, #ff9900 0%, #a37dff 50%, #18794a 100%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
 .product img {
+
   width: 25vw;
   height: 20vh;
 }
+/*dropdown css*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/*dropdown on hover*/
+.dropdown:hover {
+  display: block;
+  width: 80vw;
+}
+
+
+.product  {
+width: 20vw;
+
+  /* copilot center this
+ */
+
+    align-content: center;
+
+    display: compact;
+
+
+    margin: 5vh 5vw 5vh 5vw;
+    text-decoration: none;
+    /* copilot center this
+     */
+
+     align-content: center;
+
+
+
+
+
+
+}
+
+.product-modal img {
+  width: 20vw;
+  height: 35vh;
+}
+
+.div-left {
+
+  width: 50vw;
+  margin: 0;
+  padding:0;
+float : right;
+  margin: 0;
+  padding: 3vw;
+}
+
+.div-right {
+  margin: 0;
+  padding:0;
+
+  display: flex;
+  margin: 0;
+}
+*img:hover {
+
+}
+.product-modal li {
+
+  display: inline;
+}
+.product-modal  {
+  width: 70vw;
+
+  /* copilot center this
+ */
+
+  align-content:flex-end;
+
+
+  /* copilot right align this
+   */
+
+    align-content: flex-end;
+
+    align-content:flex-end;
+    display: compact;
+    margin: 5vh 5vw 5vh 5vw;
+    text-decoration: none;
+
+
+
+
+
+
+
+}
+
 
 /* Test card number */
 .test-card-notice {
@@ -265,35 +547,20 @@ pre {
   justify-content: center;
 }
 
-@media only screen and (max-width: 980px) {
-  .container {
-    flex-direction: column;
-  }
-
-  .header-content {
-    position: relative;
-    top: 0;
-  }
+@media only screen  {
 
   .card {
-    margin: 0 20px 20px 0;
     box-shadow: none;
   }
 
-  .card-list {
-    padding-top: 0;
-  }
 
-  .banner {
-    box-shadow: none;
-    bottom: 0;
-  }
+
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen  {
   .container {
-    height: 90vh;
-    flex-direction: column;
+align-content: center;
+    width: 100vw;
   }
 
   .card {

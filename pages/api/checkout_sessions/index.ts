@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { NextApiRequest, NextApiResponse } from "next";
 
 import { CURRENCY, MIN_AMOUNT, MAX_AMOUNT } from "../../../config";

@@ -1,0 +1,42 @@
+.DropdownReact__button {
+  padding: 6px 12px;
+  margin-bottom: 0;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: #e6e6e6;
+  font-family: sans-serif;
+  font-size: 12px; }
+
+.DropdownReact__dropdown {
+  background: #f5f5f5;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  font-size: 12px; }
+  .DropdownReact__dropdown .DropdownReact__divider {
+    height: 1px;
+    margin: 4px 12px;
+    background-color: rgba(0, 0, 0, 0.1); }
+  .DropdownReact__dropdown .DropdownReact__item {
+    color: #444;
+    font-family: sans-serif;
+    padding: 6px 12px; }
+  .DropdownReact__dropdown .DropdownReact__checkbox {
+    cursor: pointer;
+    padding: 4px 12px; }
+    .DropdownReact__dropdown .DropdownReact__checkbox:hover {
+      background-color: rgba(0, 0, 0, 0.05); }
+    .DropdownReact__dropdown .DropdownReact__checkbox .DropdownReact__checkbox__label {
+      margin-left: 4px; }
+  .DropdownReact__dropdown .DropdownReact__link {
+    cursor: pointer; }
+    .DropdownReact__dropdown .DropdownReact__link:hover {
+      background-color: rgba(0, 0, 0, 0.05); }
+    .DropdownReact__dropdown .DropdownReact__link .DropdownReact__link__a {
+      color: #444;
+      text-decoration: none; }

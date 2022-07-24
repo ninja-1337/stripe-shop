@@ -5,7 +5,12 @@
     "sku": "sku_GBJ2Ep8246qeeT",
     "price": 2000,
     "image": "https://img.capital.com/imgs/articles/1200x627x1/shutterstock_1958528764.jpg",
+
+    "secondary_image": "https://files.ambcrypto.com/wp-content/uploads/2021/11/30202142/sushiswap-1000x600.jpg",
     "attribution": "",
+    "size": ["XS", "S", "M", "L", "XL" , "XXL", "XXXL", "XXXXL"],
+
+    "color": ["red", "blue", "green", "yellow", "orange", "purple", "pink", "black", "white"],
     "currency": "EUR"
   },
   {
@@ -14,70 +19,109 @@
     "sku": "sku_GBJ2Ep8246qeqT",
     "price": 200000,
     "image": "https://files.ambcrypto.com/wp-content/uploads/2021/11/30202142/sushiswap-1000x600.jpg",
+
+    "secondary_image": "https://files.ambcrypto.com/wp-content/uploads/2021/11/30202142/sushiswap-1000x600.jpg",
     "attribution": "",
+    "size": ["XS", "S", "M", "L", "XL" , "XXL", "XXXL", "XXXXL"],
+
+    "color": ["red", "blue", "green", "yellow", "orange", "purple", "pink", "black", "white"],
     "currency": "EUR"
   },
   {
-    "name": "Product Placeholder",
-    "description": "Placeholder",
-    "sku": "sku_GBJ2sEp8246qeqT",
+    "name": "Product ",
+    "description": "Small",
+    "sku": "sku_GBJ2ssEp8246qeqT",
     "price": 200000,
     "image": "https://files.ambcrypto.com/wp-content/uploads/2021/11/30202142/sushiswap-1000x600.jpg",
+
+    "secondary_image": "https://files.ambcrypto.com/wp-content/uploads/2021/11/30202142/sushiswap-1000x600.jpg",
     "attribution": "",
+    "size": ["XS", "S", "M", "L", "XL" , "XXL", "XXXL", "XXXXL"],
+
+    "color": ["red", "blue", "green", "yellow", "orange", "purple", "pink", "black", "white"],
     "currency": "EUR"
   },
   {
-    "name": "Product Placeholder",
-    "description": "Placeholder",
-    "sku": "sku_GBJ2sEp8246qeqT",
+    "name": "Product ",
+    "description": "Small",
+    "sku": "sku_GBJ2sEgp8246qeqT",
     "price": 200000,
-    "image": "https://files.ambcrypto.com/wp-content/uploads/2021/11/30202142/sushiswap-1000x600.jpg",
+    "image": "https://liveview.printerval.com/image/1000x1000/t-shirts-men-classic-t-shirt,black,sprv1-1031027919,2d2d2d.jpeg",
+
+    "secondary_image": "https://reactjs.org/static/dd4bfca3eacb85dc3c81fe91fb2e1c10/bba1f/react-50k-tshirt.jpg",
     "attribution": "",
+    "size": ["XS", "S", "M", "L", "XL" , "XXL", "XXXL", "XXXXL"],
+
+    "color": ["red", "blue", "green", "yellow", "orange", "purple", "pink", "black", "white"],
     "currency": "EUR"
   },
   {
-    "name": "Product Placeholder",
-    "description": "Placeholder",
-    "sku": "sku_GBJ2sEp8246qeqT",
+    "name": "Product ",
+    "description": "Small",
+    "sku": "sku_GBJ2shEp8246qeqT",
     "price": 200000,
-    "image": "https://files.ambcrypto.com/wp-content/uploads/2021/11/30202142/sushiswap-1000x600.jpg",
+    "image": "https://reactjs.org/static/dd4bfca3eacb85dc3c81fe91fb2e1c10/bba1f/react-50k-tshirt.jpg",
+
+    "secondary_image": "https://files.ambcrypto.com/wp-content/uploads/2021/11/30202142/sushiswap-1000x600.jpg",
     "attribution": "",
+    "size": ["XS", "S", "M", "L", "XL" , "XXL", "XXXL", "XXXXL"],
+
+    "color": ["red", "blue", "green", "yellow", "orange", "purple", "pink", "black", "white"],
     "currency": "EUR"
   },
   {
-    "name": "Product Placeholder",
-    "description": "Placeholder",
-    "sku": "sku_GBJ2sEp8246qeqT",
+    "name": "Product",
+    "description": "Small",
+    "sku": "sku_GfBJ2sEp8246qeqT",
     "price": 200000,
     "image": "https://files.ambcrypto.com/wp-content/uploads/2021/11/30202142/sushiswap-1000x600.jpg",
+
+    "secondary_image": "https://files.ambcrypto.com/wp-content/uploads/2021/11/30202142/sushiswap-1000x600.jpg",
     "attribution": "",
+    "size": ["XS", "S", "M", "L", "XL" , "XXL", "XXXL", "XXXXL"],
+
+    "color": ["red", "blue", "green", "yellow", "orange", "purple", "pink", "black", "white"],
     "currency": "EUR"
   },
   {
-    "name": "Product Placeholder",
-    "description": "Placeholder",
-    "sku": "sku_GBJ2sEp8246qeqT",
+    "name": "Product ",
+    "description": "Small",
+    "sku": "sku_GBJ2sEp8s246qeqT",
     "price": 200000,
-    "image": "https://files.ambcrypto.com/wp-content/uploads/2021/11/30202142/sushiswap-1000x600.jpg",
+    "image": "https://cdn.shopify.com/s/files/1/1668/0637/products/9rucuh9p6h931rj74zqwnisz_large.png",
+    "secondary_image": "https://cdn.shopify.com/s/files/1/1668/0637/products/9rucuh9p6h931rj74zqwnisz_large.png",
     "attribution": "",
+    "size": ["XS", "S", "M", "L", "XL" , "XXL", "XXXL", "XXXXL"],
+
+    "color": ["red", "blue", "green", "yellow", "orange", "purple", "pink", "black", "white"],
     "currency": "EUR"
   },
 
   {
     "name": "Custom Podcasting Platform",
     "description": "Decentralised Finance Platform",
-    "sku": "sku_GBJ2Ep8359qeqT",
+    "sku": "sku_GBJ2Ep8359gqeqT",
     "price": 20000,
     "image": "https://media.istockphoto.com/photos/top-view-photo-of-podcast-concept-lightbox-with-letters-podcast-on-it-picture-id1193759813?k=20&m=1193759813&s=612x612&w=0&h=mej3U9sXdCWrXQHz6djMSvQF4k5saRNJIQZGKSRWSlE=",
+
+    "secondary_image": "https://files.ambcrypto.com/wp-content/uploads/2021/11/30202142/sushiswap-1000x600.jpg",
     "attribution": "",
+    "size": ["XS", "S", "M", "L", "XL" , "XXL", "XXXL", "XXXXL"],
+
+    "color": ["red", "blue", "green", "yellow", "orange", "purple", "pink", "black", "white"],
     "currency": "EUR"
   },
   {
     "name": "Online E-Shop",
-    "sku": "sku_GBJ2WWfMaGNC2Z",
+    "sku": "sku_GBJs2WWfMaGNC2Z",
     "price": 20000,
     "image": "https://lightform.gr/wp-content/uploads/2020/04/kataskeyh-eshop-landingp-age-1.jpg",
+
+    "secondary_image": "https://files.ambcrypto.com/wp-content/uploads/2021/11/30202142/sushiswap-1000x600.jpg",
     "attribution": "",
+    "size": ["XS", "S", "M", "L", "XL" , "XXL", "XXXL", "XXXXL"],
+
+    "color": ["red", "blue", "green", "yellow", "orange", "purple", "pink", "black", "white"],
     "currency": "EUR"
   }
 ]

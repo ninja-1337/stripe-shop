@@ -8,7 +8,6 @@ import Cart from "./Cart";
 import Products from "./Products";
 import { Elements, useElements } from "@stripe/react-stripe-js";
 import { formatAmountForDisplay } from "../utils/stripe-helpers";
-import { validateCartItems } from "use-shopping-cart/src/serverUtil";
 import MyApp from "../pages/_app";
 import getStripe from "../utils/get-stripejs";
 import cors from "../pages/api/webhooks/index";
@@ -48,13 +47,8 @@ const CartSummary = () => {
 
     redirectToCheckout({ sessionId: response.id });
   };
-  // iterate through cartDetails and diplsay the sku_id and the quantity
-  const styles = {
-    height: "90vh",
-    marginTop: "6vh",
-  };
   return (
-    <div style={styles}>
+    <div >
       <form onSubmit={handleCheckout}>
         <h2>Cart summary</h2>
         {/* This is where we'll render our cart */}
@@ -64,20 +58,18 @@ const CartSummary = () => {
         <p suppressHydrationWarning>
           <strong>Total:</strong> {formattedTotalPrice}
         </p>
-        <p suppressHydrationWarning>
-          <strong>Total:</strong> {}
-        </p>
+
         {/* Redirects the user to Stripe */}
         <StripeTestCards />
         <button
-          className="cart-style-background"
+          className="button-26"
           type="submit"
           disabled={cartEmpty || loading}
         >
           Checkout
         </button>
         <button
-          className="cart-style-background"
+          className="button-26"
           type="button"
           onClick={clearCart}
         >
