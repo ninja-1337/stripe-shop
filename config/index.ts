@@ -4,3 +4,4 @@ export const CURRENCY = "eur";
 export const MIN_AMOUNT = 5.0;
 export const MAX_AMOUNT = 9300.0;
 export const AMOUNT_STEP = 1.0;
+
