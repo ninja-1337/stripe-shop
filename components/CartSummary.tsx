@@ -48,7 +48,7 @@ const CartSummary = () => {
     redirectToCheckout({ sessionId: response.id });
   };
   return (
-    <div >
+    <div className="cart-summary" >
       <form onSubmit={handleCheckout}>
         <h2>Cart summary</h2>
         {/* This is where we'll render our cart */}

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { NextPage } from "next";
 
 import { Elements } from "@stripe/react-stripe-js";
@@ -9,6 +10,7 @@ const styles = {
   marginTop: "7vh",
 };
 const DonatePage: NextPage = () => {
+
   return (
     <div style={styles}>
       <Layout title="Donate with Elements | Next.js + TypeScript Example">

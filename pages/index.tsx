@@ -22,9 +22,9 @@ const DonatePage: NextPage = () => {
   return (
 
       <Layout title="Shopping Cart | Next.js + TypeScript Example">
-        <div style={center}>
-          <h1 >Products</h1>
-        </div>
+
+          <div className="products-header">Products</div>
+
         <Cart>
           <Products />
 

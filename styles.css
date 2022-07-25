@@ -73,6 +73,45 @@ a {
   background-color: rgba(0, 0, 0, 0.9);
 }
 
+.cart-summary
+{
+  /*!*position div at center of the page*/
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+width: 45vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+
+.products-header
+{
+  /*!*position div at center of the line*/
+    position: absolute;
+
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+  position: center;
+  width: 40vw;
+  align-items: center;
+
+}
+
 .button-27 {
   appearance: none;
   background-color: #000000;
